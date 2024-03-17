@@ -21,10 +21,4 @@ jobs:
         run: |
           ./package.sh
 
-      - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v5
-        with:
-          version: latest
-          args: release --clean --release-notes=./Release.md
-        env:
-          GITHUB_TOKEN: ${{ secrets.GPR_TOKEN }}
+
